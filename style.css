@@ -79,13 +79,15 @@ width: 200px;
     background-color:black;
     border: none;
 }
-#brand-section , #body-type-section{
+#brand-section , #body-type-section,#collection-section,.collection-section-header-container{
     display:flex;
     justify-content: center;
     margin: 40px 0px;
+   
 }
-.brand-section-container,.body-type-section-container{
+.brand-section-container,.body-type-section-container,.collection-section-container{
     width:90vw;
+   
 }
 .brand-section-header,.body-type-section-header{
     display:flex;
@@ -94,9 +96,11 @@ width: 200px;
     width:89%;
     display:flex;
     justify-content: end;
+    
 }
 .body-type-section-button{
     width:87%;
+    
 }
 .brand-section-button a,.body-type-section-button a{
     text-decoration: none;
@@ -114,4 +118,114 @@ width: 200px;
     background-color:#E5E4E2;
     margin:10px 0px ;
     border-radius:5px;
+    
+}
+#collection-section{
+    background-color: #E5E4E2;
+    margin-bottom: unset;
+    padding: 40px;
+}
+.collection-section-header{
+width: 55%;
+text-align: center;
+}
+.collection-section-header p{
+    padding: 15px 0px;
+}
+.collection-section-header ul li{
+    display: inline;
+    padding: 7px 5px;
+}
+.collection-section-header ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 30px;
+}
+/* .collection-section-header a:focus{
+    background-color: black;
+    color: white;
+} */
+.collection-section-header ul li:first-of-type a{
+    background-color: black;
+    color: white;
+}
+.collection-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+.collection-items{
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.collection-items .img-container,.specs-container,.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.collection-items img{
+    width: 95%;
+    height: auto;
+}
+.details-container h1{
+    padding: 5px 0px;
+}
+.details-container{
+    margin: 10px;
+    padding-left: 10px;
+}
+.details-container h1 sub{
+    font-weight: 100 ;
+    color: gray;
+}
+.specs-container,.button{
+    margin: 10px 0px;
+    padding-left: unset;
+}
+.specs-content{
+    width: 95%;
+    height: 70px;
+    background-color: #E5E4E2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+ 
+}
+.spec{
+    text-align: center;
+}
+.button{
+    width: 95%;
+   
+}
+.button button{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 0px;
+    border: .5px solid black;
+    border-radius: 30px;
+}
+.collection-item-2{
+    border: 1px solid black;
+}
+.collection-item-2 button{
+    background-color: black;
+    color: white;
+}
+
+.see-all-button{
+    display: flex;
+    justify-content: center;
+}
+.see-all-button button{
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 30px;
 }
