@@ -149,7 +149,6 @@ footer{
     display:flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    gap: 20px;
     
  
    
@@ -163,12 +162,15 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer; 
+    padding-top: 15px;
     
 }
 .brand, .body-type{
     text-align: center;
- 
+}
+.brand p,.body-type p {
+    padding: 10px 0px;
 }
 
 
