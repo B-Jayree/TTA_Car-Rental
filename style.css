@@ -2,6 +2,11 @@
     margin:0;
     padding:0;
 }
+
+a{
+    text-decoration: none;
+}
+
 /* Home Section Styles*/
 #home-section{
    margin-bottom: 20px;
@@ -9,8 +14,8 @@
 .home-container{
     height:100vh;
     background-image: url(./image\ 23.png);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     color:white;
 }
 .home-container p{
@@ -41,7 +46,8 @@ width:20%;
     color:white;
     padding:5px 15px;
     border:.5px solid white;
-    border-radius: 12px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 .form-container{
     display:flex;
@@ -70,16 +76,25 @@ width: 200px;
 }
 .input input{
     padding: 10px;
-    border:1px solid grey;
+    border: 1px solid grey;
     border-radius:5px;
 }
 .input button{
-    margin-top: 10px;
-    padding:10px 20px;
+    margin-top: 30px;
+    padding:17px ;
     color:white;
     background-color:black;
     border: none;
+    border-radius: 25px;
+    cursor: pointer;
 }
+.input .input-container{
+   position: relative;
+}
+.input .input-container input{
+    padding-left: 25px;
+}
+
 /* Multiple Sections Styles*/
 #brand-section , 
 #body-type-section,
@@ -89,7 +104,9 @@ width: 200px;
 .collection-section-header-container,
 .how-section-header-container,
 .service-section-header-container,
-#comment-section{
+#comment-section,
+#download-section,
+footer{
     display:flex;
     justify-content: center;
     margin: 40px 0px;
@@ -100,7 +117,9 @@ width: 200px;
 .body-type-section-container,
 .collection-section-container,
 .how-section-container,
-.comment-section-container{
+.comment-section-container,
+.download-section-container,
+.footer-container{
     width:90vw;
    
 }
@@ -112,23 +131,24 @@ width: 200px;
     display:flex;
 }
 .brand-section-button,.body-type-section-button,.comment-section-buttons{
-    width:89%;
+    width:88%;
     display:flex;
     justify-content: end;
     
 }
 .body-type-section-button{
-    width:87%;
+    width:86%;
     
 }
 .brand-section-button a,.body-type-section-button a{
     text-decoration: none;
     color:black;
+    cursor: pointer;
 }
 .brand-container,.body-type-container{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
    
 }
 .brand-content,.body-type-content{
@@ -137,7 +157,19 @@ width: 200px;
     background-color:#E5E4E2;
     margin:10px 0px ;
     border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     
+}
+.brand, .body-type{
+    text-align: center;
+}
+
+.body-type-container{
+    width: 90vw;
+    height: 35vh;
 }
 /* Collection Section Styles */
 #collection-section{
@@ -349,6 +381,7 @@ text-align: center;
 .service-item .service-content p{
     padding: 10px;
 }
+/* Comment Section Style */
 .comment-section-buttons{
     width: 75% !important;
 }
@@ -386,4 +419,85 @@ text-align: center;
 }
 .comment-owner-container-content h4{
     padding: 10px 0px;
+}
+/* Download Section Styles */
+#download-section{
+    background-color: #000000;
+    color: white;
+    margin: unset;
+    padding: 20px 0px ;
+}
+.download-section-container{
+    display: flex;
+}
+.download-section-container >.download-content {
+    width: 50%;
+   padding-left: 40px;
+
+}
+.download-section-container >.download-description h2{
+    padding: 10px 0px;
+}
+.download-section-container >.download-description p{
+    font-size: 15px;
+    padding: 10px 0px;
+    font-weight: 100;
+}
+.download-section-container .download-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-button{
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+.download-button-icon{
+    padding: 10px 5px 10px 20px;
+}
+.download-button-text{
+    color: black;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+.download-button-text p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.download-button-text a{
+   color: black;
+}
+.download-button-text h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Footer Styles */
+footer{
+    margin: unset;
+    background-color: #000000;
+    padding: 20px 0px;
+    color: white;
+}
+.footer-container{
+    display: flex;
+}
+.footer-logo{
+    display: flex;
+    width: 20%;
+    justify-content: start;
+}
+.footer-nav{
+    width: 60%;
+    text-align: center;
+}
+.footer-nav ul li,
+.footer-socials ul li{
+    display: inline;
+}
+.footer-nav ul li a,
+.footer-socials ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
 }
