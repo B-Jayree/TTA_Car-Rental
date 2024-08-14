@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+/* Home Section Styles*/
 #home-section{
    margin-bottom: 20px;
 }
@@ -79,30 +80,38 @@ width: 200px;
     background-color:black;
     border: none;
 }
+/* Multiple Sections Styles*/
 #brand-section , 
 #body-type-section,
 #collection-section,
 #how-section,
+#service-section,
 .collection-section-header-container,
-.how-section-header-container{
+.how-section-header-container,
+.service-section-header-container,
+#comment-section{
     display:flex;
     justify-content: center;
     margin: 40px 0px;
    
 }
+.service-section-container,
 .brand-section-container,
 .body-type-section-container,
 .collection-section-container,
-.how-section-container{
+.how-section-container,
+.comment-section-container{
     width:90vw;
    
 }
+/* Brand Section Styles */
 .brand-section-header,
-.body-type-section-header
+.body-type-section-header,
+.comment-section-header
 {
     display:flex;
 }
-.brand-section-button,.body-type-section-button{
+.brand-section-button,.body-type-section-button,.comment-section-buttons{
     width:89%;
     display:flex;
     justify-content: end;
@@ -130,18 +139,22 @@ width: 200px;
     border-radius:5px;
     
 }
+/* Collection Section Styles */
 #collection-section{
     background-color: #E5E4E2;
     margin-bottom: unset;
     padding: 40px;
 }
 .collection-section-header,
-.how-section-header{
+.how-section-header,
+.service-section-header
+{
 width: 55%;
 text-align: center;
 }
 .collection-section-header p,
-.how-section-header p{
+.how-section-header p,
+.service-section-header p{
     padding: 15px 0px;
 }
 .collection-section-header ul li{
@@ -242,9 +255,11 @@ text-align: center;
     border-radius: 30px;
 }
 .collection-section-header h1,
-.how-section-header h1{
+.how-section-header h1,
+.service-section-header h1{
  font-family: sans-serif;
 }
+/* How Section Styles*/
 .how-container{
     display: flex;
     position: relative;
@@ -299,4 +314,76 @@ text-align: center;
     padding: 15px 5px ;
     margin: 30px 0px;
     border-radius: 7px;
+}
+/* Service Section Styles*/
+#service-section{
+    background-color: #000000;
+    color: white;
+    padding: 40px 0px ;
+    margin-bottom: unset;
+}
+.service-grid{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+.service-item .service-icon-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.service-icon-container .service-icon{
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+}
+.service-item .service-content{
+    text-align: center;
+}
+.service-item .service-content h4{
+    padding: 10px 0px
+    ;
+}
+.service-item .service-content p{
+    padding: 10px;
+}
+.comment-section-buttons{
+    width: 75% !important;
+}
+.comment-section-buttons button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+.comment-section-buttons .comment-section-button-1{
+    background-color: white;
+    color: #A4A4A4;
+    border: 1px solid #C0C0C0;
+}
+.comment-section-buttons .comment-section-button-2{
+    background-color: #000000;
+    color:white;
+    border: 1px solid black;
+}
+.comment-content{
+    width: 90%;
+    margin: 10px 0px;
+}
+.comment-content p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.comment-owner-container{
+    display: flex;
+    margin: 30px 0px;
+}
+.comment-owner-container-content{
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.comment-owner-container-content h4{
+    padding: 10px 0px;
 }
