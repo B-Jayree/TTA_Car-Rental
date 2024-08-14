@@ -137,7 +137,7 @@ footer{
     
 }
 .body-type-section-button{
-    width:86%;
+    width:87%;
     
 }
 .brand-section-button a,.body-type-section-button a{
@@ -147,15 +147,18 @@ footer{
 }
 .brand-container,.body-type-container{
     display:flex;
-    flex-wrap: wrap;
     justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+ 
    
 }
 .brand-content,.body-type-content{
     width: 15%;
-    height:100px;
-    background-color:#E5E4E2;
-    margin:10px 0px ;
+    height: 100px;
+    background-color: #E5E4E2;
+    margin: 10px 0px;
     border-radius:5px;
     display: flex;
     justify-content: center;
@@ -165,12 +168,10 @@ footer{
 }
 .brand, .body-type{
     text-align: center;
+ 
 }
 
-.body-type-container{
-    width: 90vw;
-    height: 35vh;
-}
+
 /* Collection Section Styles */
 #collection-section{
     background-color: #E5E4E2;
