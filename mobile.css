@@ -1,8 +1,6 @@
 @media (max-width:600px){
     #comment-section,
     #download-section,
-    #how-section,
-    #service-section, 
     footer{
         display: none;
     }
@@ -28,14 +26,35 @@
     .brand-content p,.body-type-content p{
         font-size: 13px;
     }
-    .collection-section-header{
+    .collection-section-header,
+    .how-section-header,
+    .service-section-header{
         width: 65%;
     }
     .collection-section-header ul li{
         display: block;
         margin: 15px 0px;
     }
-    .collection-grid{
+    .collection-grid,
+    .service-grid{
         grid-template-columns: auto;
+    }
+    .how-container{
+        flex-direction: column;
+    }
+    .how-container .car-img{
+        width: 100%;
+        height: auto;
+    }
+    .car-img img{
+        width: 70%;
+        height: auto;
+    }
+    .how-content-empty{
+        display: none;
+    }
+    .how-content-steps{
+      position: relative;
+      width: 100%;
     }
 }
