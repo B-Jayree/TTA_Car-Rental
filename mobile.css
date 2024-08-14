@@ -1,7 +1,6 @@
 @media (max-width:600px){
     #comment-section,
     #download-section,
-    #collection-section,
     #how-section,
     #service-section, 
     footer{
@@ -28,5 +27,15 @@
     }
     .brand-content p,.body-type-content p{
         font-size: 13px;
+    }
+    .collection-section-header{
+        width: 65%;
+    }
+    .collection-section-header ul li{
+        display: block;
+        margin: 15px 0px;
+    }
+    .collection-grid{
+        grid-template-columns: auto;
     }
 }
